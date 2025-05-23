@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>過去のお知らせ一覧</title>
+<style>
+    body {
+      background-color: #eaf6fb;
+      font-family: "Helvetica Neue", sans-serif;
+      padding: 40px;
+      color: #333;
+    }
+    details {
+      background: white;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      color: #007acc;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary:before {
+      content: "▼ ";
+    }
+    summary:before {
+      content: "▶ ";
+    }
+    .date-static {
+      font-size: 0.9em;
+      color: #666;
+      white-space: nowrap;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #007acc;
+    }
+  </style>
+<meta content="noindex" name="robots"/></head>
+<body>
+<h1>過去のお知らせ一覧</h1>
+<details>
+<summary>
+<span>メンテナンス完了のお知らせ</span>
+<span class="date-static">2025/03/10</span>
+</summary>
+<p>定期メンテナンスは無事完了いたしました。ご協力ありがとうございました。</p>
+</details>
+<details>
+<summary>
+<span>システム障害報告</span>
+<span class="date-static">2025/02/20</span>
+</summary>
+<p>一部のお客様においてログイン障害が発生しておりましたが、現在は復旧しております。</p>
+</details>
+<details>
+<summary>
+<span>年始のご挨拶</span>
+<span class="date-static">2025/01/01</span>
+</summary>
+<p>新年あけましておめでとうございます。本年もどうぞよろしくお願いいたします。</p>
+</details>
+<a class="back-link" href="index.html">← トップページへ戻る</a>
+</body>
+</html>
